@@ -1,0 +1,29 @@
+package com.zfl.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.zfl.DAO.dao;
+
+/*
+ * 维护功能,service对其中的数据进行处理
+ * */
+public class Maintainservice {
+	// 单条删除
+	public void deleteOne(String id) {
+		if (id != null && !"".equals(id.trim())) {
+			dao d = new dao();
+			d.deleteOne(Integer.valueOf(id));
+		}
+	}
+
+	// 多条删除
+	public void deleteBatch(String[] ids) {
+		List<Integer> lids = new ArrayList<>();
+		for (String id : ids) {
+			if (id != null && !"".equals(id.trim())) {
+				lids.add(Integer.parseInt(id));
+			}
+		}
+	}
+}

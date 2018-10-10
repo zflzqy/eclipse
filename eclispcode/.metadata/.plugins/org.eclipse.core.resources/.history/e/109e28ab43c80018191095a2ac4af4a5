@@ -1,0 +1,27 @@
+package com.zfl.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.zfl.DAO.dao;
+import com.zfl.bean.Message;
+
+/*
+ * 列表页面初始化和查询
+ * */
+public class QueryService {
+	// 页面初始化
+	public List<Message> getMessages(String command, String description) {
+		dao d = new dao();
+		return d.getMessages(command, description);
+	}
+	//通过指令查看自动回复内容
+	public String QueryByCommand(String command) {
+		dao d =new dao();
+		List<Message> messages =new ArrayList<>();
+		if(messages.size()>0) {
+			return messages.get(0).getContent();
+		}
+		return null;
+	}
+}

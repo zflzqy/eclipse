@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.zfl.servlet.ListServlet"/>
+<fullyQualifiedTypeName name="com.zfl.service.ListService"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.zfl.DAO.dao"/>
+<fullyQualifiedTypeName name="sun.nio.cs.ext.MacArabic"/>
+<fullyQualifiedTypeName name="com.zfl.servlet.AddServlet"/>
+<fullyQualifiedTypeName name="com.zfl.service.AddService"/>
+<fullyQualifiedTypeName name="com.zfl.service.Maintainservice"/>
+<fullyQualifiedTypeName name="java.io.PipedWriter"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.zfl.bean.Message"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.ICONST"/>
+<fullyQualifiedTypeName name="com.zfl.service.QueryService"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+MODULES_MANAGER_V2
+pacong.__init__|E:\eclipse\eclispcode\pacong\src\pacong\__init__.py
+pacong.html_downloader|E:\eclipse\eclispcode\pacong\src\pacong\html_downloader.py
+pacong.html_outputer|E:\eclipse\eclispcode\pacong\src\pacong\html_outputer.py
+pacong.html_parser|E:\eclipse\eclispcode\pacong\src\pacong\html_parser.py
+pacong.spider_main|E:\eclipse\eclispcode\pacong\src\pacong\spider_main.py
+pacong.url_manager|E:\eclipse\eclispcode\pacong\src\pacong\url_manager.py
+pacong1.__init__|E:\eclipse\eclispcode\pacong\src\pacong1\__init__.py
+pacong1.https|E:\eclipse\eclispcode\pacong\src\pacong1\https.py
+pacong1.main|E:\eclipse\eclispcode\pacong\src\pacong1\main.py
+pacong1.parse|E:\eclipse\eclispcode\pacong\src\pacong1\parse.py
+pacong1.setting|E:\eclipse\eclispcode\pacong\src\pacong1\setting.py

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+       Copyright 2009-2016 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Message">
+	<!-- id是主键，type是指向哪个javabean类，包含完整包名，id是该resultMap的名称方便select标签找到
+		column是数据库字段名，jdbcType对应数据库字段的类型，property是bean类的成员变量
+	 -->
+  <resultMap type="com.zfl.bean.Message" id="MessageResult">
+    <id column="id" jdbcType="INTEGER" property="id"/>
+    <result column="command" jdbcType="VARCHAR" property="command"/>
+    <result column="description" jdbcType="VARCHAR" property="description"/>
+    <result column="content" jdbcType="VARCHAR" property="content"/>
+  </resultMap>
+	<!-- id是为了sqlsession找到者条sql语句，resultMap指向本文件配置的resultMap标签的id 
+		com.zfl.bean.Message代表传入的数据类型
+	-->
+  <select id="getMessages" parameterType="com.zfl.bean.Message" resultMap="MessageResult">
+    SELECT id,command,description,content FROM message 
+    <where>
+    <!-- 这里的and是ognl特有写法 表示&&，可以用&amp;而&quot;代表一个双引号遵循html转义写法
+    	#{command}这里是mybatis填充成？，mybatis知道从parameterType中去取值，对应是command
+    -->
+    <if test="command!=null and!&quot;&quot;.equals(command.trim())">AND command=#{command}</if>
+    <if test="description!=null and!&quot;&quot;.equals(description.trim())">
+   	AND  description LIKE '%' #{description} '%' </if>
+   
+    </where>
+  </select>
+  <delete id="deleteOne" parameterType="int">
+  	delete from message WHERE id = #{_parameter}
+  </delete>
+  <delete id="deleteBatch" parameterType="java.util.List">
+  	delete from message WHERE id in(
+  		<!-- separator代表for循环中用什么分割 -->
+  		<foreach collection="list" item="item" separator=",">
+  			#{item}
+  		</foreach>
+  	)
+  </delete>
+  <insert id="addMessage" parameterType="com.zfl.bean.Message">
+  <selectKey keyProperty="id" resultType="int" order="BEFORE">
+    SELECT MAX(id)+1 FROM message
+</selectKey>
+  	INSERT INTO message(
+  	id,command,description,content
+  	)VALUES(#{id},#{command},#{description},#{content})
+  </insert>
+
+</mapper>

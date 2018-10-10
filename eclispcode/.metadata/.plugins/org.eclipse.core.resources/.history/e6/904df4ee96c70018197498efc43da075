@@ -1,0 +1,15 @@
+package com.zfl.service;
+
+import com.zfl.DAO.dao;
+
+/*
+ * 维护功能
+ * */
+public class Maintainservice {
+	//单条删除
+	public void deleteOne(String id) {
+		if(id!=null&&!"".equals(id.trim()))
+		dao d =new dao();
+		d.deleteOne(id);
+	}
+}

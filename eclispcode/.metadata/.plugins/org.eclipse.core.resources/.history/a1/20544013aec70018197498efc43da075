@@ -1,0 +1,21 @@
+package com.zfl.service;
+
+import com.zfl.DAO.dao;
+import com.zfl.bean.Message;
+
+/*
+ * Ìí¼Ó¿ØÖÆ²ã
+ * */
+public class AddService {
+	public void AddMessage(String command,String description,String content) {
+		Message message =new Message();
+		if(command!=null&&!"".equals(command.trim()))
+			message.setCommand(command);
+		if(description!=null&&!"".equals(description.trim()))
+			message.setDescription(description);
+		if(content!=null&&!"".equals(content.trim()))
+			message.setContent(content);
+		dao d =new dao();
+		d.AddMessage(message);
+	}
+}

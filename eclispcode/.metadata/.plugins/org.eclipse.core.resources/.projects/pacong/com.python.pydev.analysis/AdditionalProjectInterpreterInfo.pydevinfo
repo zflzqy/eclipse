@@ -1,0 +1,91 @@
+-- VERSION_5
+-- START DISKCACHE_2
+E:\eclipse\eclispcode\.metadata\.plugins\org.eclipse.core.resources\.projects\pacong\com.python.pydev.analysis\v2_indexcache
+pacong.html_downloader|1537427729303131000|E:\eclipse\eclispcode\pacong\src\pacong\html_downloader.py
+pacong.html_parser|1537427729304131000|E:\eclipse\eclispcode\pacong\src\pacong\html_parser.py
+pacong1.main|1537494913110643000|E:\eclipse\eclispcode\pacong\src\pacong1\main.py
+pacong1.https|1537428948248850000|E:\eclipse\eclispcode\pacong\src\pacong1\https.py
+pacong1.parse|1537430640758656000|E:\eclipse\eclispcode\pacong\src\pacong1\parse.py
+pacong1.setting|1537428790194810000|E:\eclipse\eclispcode\pacong\src\pacong1\setting.py
+pacong.spider_main|1537433747299340000|E:\eclipse\eclispcode\pacong\src\pacong\spider_main.py
+pacong.url_manager|1537427729302130000|E:\eclipse\eclispcode\pacong\src\pacong\url_manager.py
+pacong.__init__|1537426896059472000|E:\eclipse\eclispcode\pacong\src\pacong\__init__.py
+pacong1.__init__|1537428788051687000|E:\eclipse\eclispcode\pacong\src\pacong1\__init__.py
+pacong.html_outputer|1537427882437889000|E:\eclipse\eclispcode\pacong\src\pacong\html_outputer.py
+-- END DISKCACHE
+-- START DICTIONARY
+29
+10=pacong.html_downloader
+4=pacong1.main
+8=pacong.html_parser
+19=UrlManager
+2=pacong1.setting
+23=Parse
+25=HtmlOutputer.__init__
+17=E:\eclipse\eclispcode\pacong\src\pacong\url_manager.py
+22=Http
+9=E:\eclipse\eclispcode\pacong\src\pacong\html_downloader.py
+6=pacong.html_outputer
+21=SpiderMain
+18=pacong.url_manager
+26=HtmlDownloader
+3=E:\eclipse\eclispcode\pacong\src\pacong1\main.py
+20=HtmlOutputer
+15=E:\eclipse\eclispcode\pacong\src\pacong1\parse.py
+14=pacong.spider_main
+29=UrlManager.__init__
+5=E:\eclipse\eclispcode\pacong\src\pacong\html_outputer.py
+13=E:\eclipse\eclispcode\pacong\src\pacong\spider_main.py
+24=HtmlParser
+12=pacong1.https
+16=pacong1.parse
+28=Parse.__init__
+27=SpiderMain.__init__
+11=E:\eclipse\eclispcode\pacong\src\pacong1\https.py
+1=E:\eclipse\eclispcode\pacong\src\pacong1\setting.py
+7=E:\eclipse\eclispcode\pacong\src\pacong\html_parser.py
+-- END DICTIONARY
+-- START TREE 1
+19
+IP|1|IP!1^44#1*19@
+UA|1|UA!1^108#1*19@
+cit|1|cityList!3^82#5*35@
+coo|1|cookies!1^37#1*19@
+fla|1|flag!3^87#9*35@
+get|2|getInfoDetail!3^36#5*34@getInfo!3^17#5*34@
+hea|1|headers!1^18#1*19@
+htm|3|HtmlOutputer!5^1#7*49@HtmlParser!7^5#7*65@HtmlDownloader!9^4#7*81@
+htt|1|Http!11^13#7*97@
+jav|1|java!13^43#5*115@
+kdl|1|kdList!3^81#5*35@
+mai|1|main!3^67#5*34@
+obj|1|obj_spider!13^44#5*115@
+par|2|Parse!15^6#7*129@para!3^86#9*35@
+pro|1|processInfo!3^44#5*34@
+roo|1|root_utl!13^42#5*115@
+spi|1|SpiderMain!13^5#7*113@
+tag|1|TAGIP!1^41#1*19@
+url|2|UrlManager!17^1#7*145@url!3^83#5*35@
+-- END TREE
+-- START TREE 2
+19
+__i|5|__init__!19&17^2#9*146@__init__!20&5^2#9*50@__init__!21&13^6#9*114@__init__!22&11^18#9*98@__init__!23&15^11#9*130@
+_ge|2|_get_new_urls!24&7^7#9*66@_get_new_data!24&7^20#9*66@
+add|2|add_new_urls!19&17^16#9*146@add_new_url!19&17^9#9*146@
+col|1|collect_data!20&5^5#9*50@
+con|1|confirm!22&11^88#9*98@
+cra|1|craw!21&13^12#9*114@
+dat|1|datas!25&5^3#9*51@
+dow|2|download!26&9^5#9*82@downloader!27&13^8#9*115@
+get|3|get_new_url!19&17^27#9*146@getUtls!19&17^6#9*146@get!22&11^21#9*98@
+has|1|has_new_url!19&17^23#9*146@
+htm|1|htmlCode!28&15^12#9*131@
+jso|1|json!28&15^13#9*131@
+new|1|new_urls!29&17^3#9*147@
+old|1|old_urls!29&17^4#9*147@
+out|2|output_html!20&5^10#9*50@outputer!27&13^10#9*115@
+par|4|parseInfo!23&15^42#9*130@parsePage!23&15^32#9*130@parser!27&13^9#9*115@parseTool!23&15^16#9*130@
+pas|1|paser!24&7^33#9*66@
+pos|1|post!22&11^54#9*98@
+url|2|urlprocess!22&11^97#9*98@urls!27&13^7#9*115@
+-- END TREE
