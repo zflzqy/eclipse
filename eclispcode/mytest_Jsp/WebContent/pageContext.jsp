@@ -11,7 +11,7 @@
 	<!-- 如果获取的属性页面是关闭的则为空 -->
 	获取会话中的属性值：<%=pageContext.getSession().getAttribute("name") %><br>
 	<%
-		//跳转页面
+		//跳转页面,请求转发
 		//pageContext.forward("login.jsp");
 		//包含其他页面或文件
 		pageContext.include("nine x nine.jsp");

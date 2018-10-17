@@ -13,19 +13,10 @@
 	<% 
 		request.setCharacterEncoding("utf-8");
 		String name ="",password ="";
-		//判断以前是否选择过记录账号和密码，不重复记录，时间到了就清零
-		boolean isremenber = true;
 		Cookie[] cookies = request.getCookies();
-		if(cookies!=null&&cookies.length>0){
-			for(Cookie c:cookies){
-				if(c.getName().equals("name")||c.getName().equals("password")){
-					isremenber = false;
-				}
-			}
-		}
 		//判断用户是否登录
 		String[] iscookie = request.getParameterValues("iscookie");
-		if(iscookie!=null&&iscookie.length>0&&isremenber)
+		if(iscookie!=null&&iscookie.length>0)
 		{
 			//设置cookie编码，防止中文乱码
 			name = URLEncoder.encode(request.getParameter("name"),"utf-8");

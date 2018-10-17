@@ -14,7 +14,7 @@
 	<!-- 使用*用表单跟javabean所有属性自动匹配属性 -->
 	<%-- <jsp:setProperty property="*" name="users"/> --%>
 	
-	<!-- 表单跟javabean部分属性自动匹配属性,这里的property是表单name赋的值 -->
+	<!-- 表单跟javabean部分属性自动匹配属性,这里的property是表单name赋的值，必须和javaBean名称一致 -->
 	<%-- <jsp:setProperty property="name" name="users"/>
 	<jsp:setProperty property="password" name="users"/> --%>
 	
